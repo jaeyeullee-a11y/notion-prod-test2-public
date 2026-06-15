@@ -1,0 +1,15 @@
+@import "tailwindcss";
+@import "../styles/untitled-ui-tokens.css";
+
+@theme inline {
+  --color-background: var(--color-gray-25);
+  --color-foreground: var(--color-gray-900);
+  --font-sans: var(--font-display);
+  --font-mono: var(--font-geist-mono);
+}
+
+body {
+  background: var(--color-background);
+  color: var(--color-foreground);
+  font-family: var(--font-display);
+}
