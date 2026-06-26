@@ -1,8 +1,13 @@
+import type { Metadata } from "next";
 import { Header } from "@/components/layout/header";
 import { StatsCard } from "@/components/features/stats-card";
 import { RecentActivity } from "@/components/features/recent-activity";
 import { Button } from "@/components/ui/button";
 import { Users, DollarSign, BarChart3, TrendingUp, Plus } from "lucide-react";
+
+export const metadata: Metadata = {
+  title: "대시보드",
+};
 
 export default function DashboardPage() {
   return (

@@ -1,7 +1,12 @@
+import type { Metadata } from "next";
 import { Header } from "@/components/layout/header";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { Plus, MoreHorizontal } from "lucide-react";
+
+export const metadata: Metadata = {
+  title: "프로젝트",
+};
 
 const projects = [
   {

@@ -13,7 +13,10 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Untitled - B2B SaaS Platform",
+  title: {
+    default: "Untitled - B2B SaaS Platform",
+    template: "%s · Untitled",
+  },
   description:
     "팀의 프로젝트 관리, 데이터 분석, 협업을 하나의 플랫폼에서 통합하는 B2B SaaS 솔루션",
 };

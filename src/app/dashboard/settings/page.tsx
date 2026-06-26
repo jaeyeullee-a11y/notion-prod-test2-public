@@ -1,6 +1,11 @@
+import type { Metadata } from "next";
 import { Header } from "@/components/layout/header";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
+
+export const metadata: Metadata = {
+  title: "설정",
+};
 
 export default function SettingsPage() {
   return (
