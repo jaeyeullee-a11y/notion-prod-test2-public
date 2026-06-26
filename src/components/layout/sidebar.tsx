@@ -109,8 +109,11 @@ export function Sidebar() {
           <span className="text-sm font-semibold text-gray-700">Jay Yeul</span>
           <span className="text-sm text-gray-600">jay@example.com</span>
         </div>
-        <button className="text-gray-500 hover:text-gray-700">
-          <LogOut className="h-5 w-5" />
+        <button
+          aria-label="로그아웃"
+          className="rounded-md text-gray-500 hover:text-gray-700 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand-100"
+        >
+          <LogOut aria-hidden="true" className="h-5 w-5" />
         </button>
       </div>
     </aside>

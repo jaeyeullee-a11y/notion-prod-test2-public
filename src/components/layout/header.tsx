@@ -20,15 +20,26 @@ export function Header({ title, description, actions }: HeaderProps) {
       </div>
       <div className="flex items-center gap-4">
         <div className="relative w-80">
-          <Search className="absolute left-3.5 top-1/2 h-5 w-5 -translate-y-1/2 text-gray-500" />
+          <Search
+            aria-hidden="true"
+            className="absolute left-3.5 top-1/2 h-5 w-5 -translate-y-1/2 text-gray-500"
+          />
           <Input
+            type="search"
+            aria-label="검색"
             placeholder="검색..."
             className="pl-11"
           />
         </div>
-        <button className="relative rounded-lg border border-gray-300 p-2.5 text-gray-500 shadow-xs hover:bg-gray-50">
-          <Bell className="h-5 w-5" />
-          <span className="absolute -right-0.5 -top-0.5 flex h-4 w-4 items-center justify-center rounded-full bg-error-500 text-[10px] font-medium text-white">
+        <button
+          aria-label="알림 (읽지 않은 알림 3개)"
+          className="relative rounded-lg border border-gray-300 p-2.5 text-gray-500 shadow-xs hover:bg-gray-50 focus-visible:outline-none focus-visible:ring-4 focus-visible:ring-brand-100"
+        >
+          <Bell aria-hidden="true" className="h-5 w-5" />
+          <span
+            aria-hidden="true"
+            className="absolute -right-0.5 -top-0.5 flex h-4 w-4 items-center justify-center rounded-full bg-error-500 text-[10px] font-medium text-white"
+          >
             3
           </span>
         </button>
